@@ -1,0 +1,29 @@
+// Save a file as http.rest to get postman like feature through our rest extension
+
+//Gets all members
+GET http://localhost:3000/api/members
+
+// Makes new member
+###
+POST http://localhost:3000/api/members HTTP/1.1
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+###
+
+// Updates members
+PUT http://localhost:3000/api/members/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Juju"
+} 
+
+###
+
+// Deletes members
+Delete http://localhost:3000/api/members/1 HTTP/1.1
